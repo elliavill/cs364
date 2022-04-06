@@ -1,0 +1,24 @@
+﻿<Window x:Class="Project05.MainWindow"
+        xmlns="http://schemas.microsoft.com/winfx/2006/xaml/presentation"
+        xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml"
+        xmlns:d="http://schemas.microsoft.com/expression/blend/2008"
+        xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006"
+        xmlns:local="clr-namespace:Project05"
+        mc:Ignorable="d"
+        Title="MainWindow" Height="509" Width="800">
+   <Grid Margin="0,0,0,-6">
+      <Label x:Name="lblCustomer" Content="Customer" HorizontalAlignment="Left" Margin="58,95,0,0" VerticalAlignment="Top"/>
+      <Label x:Name="lblAccount" Content="Account" HorizontalAlignment="Left" Margin="58,221,0,0" VerticalAlignment="Top"/>
+      <Label x:Name="lblCustomerInfo" Content="Customer Information" HorizontalAlignment="Left" Margin="318,101,0,0" VerticalAlignment="Top"/>
+      <Label x:Name="lblAccountInfo" Content="Account Information" HorizontalAlignment="Left" Margin="318,227,0,0" VerticalAlignment="Top"/>
+      <ComboBox x:Name="cmbCustomerList" HorizontalAlignment="Left" Margin="63,126,0,0" VerticalAlignment="Top" Width="164" ItemsSource="{Binding addCustomer}" SelectionChanged="cmbCustomerList_SelectionChanged"/>
+      <ComboBox x:Name="cmbAccountList" HorizontalAlignment="Left" Margin="63,252,0,0" VerticalAlignment="Top" Width="164"/>
+      <TextBox x:Name="txtboxCustomerInfo" HorizontalAlignment="Left" Margin="325,132,0,0" TextWrapping="Wrap" VerticalAlignment="Top" Width="385" Height="76"/>
+      <TextBox x:Name="txtboxAccountInfo" HorizontalAlignment="Left" Margin="325,258,0,0" TextWrapping="Wrap" VerticalAlignment="Top" Width="385" Height="115"/>
+      <Button x:Name="btnDeposit" Content="Deposit" HorizontalAlignment="Left" Margin="325,390,0,0" VerticalAlignment="Top" Click="btnDeposit_Click" Height="27" Width="68"/>
+      <Button x:Name="btnWithdrawal" Content="Withdrawal" HorizontalAlignment="Left" Margin="416,390,0,0" VerticalAlignment="Top" Click="btnWithdrawal_Click" Height="27" Width="68"/>
+      <Button x:Name="btnPayment" Content="Payment" HorizontalAlignment="Left" Margin="499,390,0,0" VerticalAlignment="Top" Click="btnPayment_Click" Height="27" Width="68"/>
+      <Button x:Name="btnEndCheck" Content="End Check" HorizontalAlignment="Left" Margin="642,390,0,0" VerticalAlignment="Top" Click="btnEndCheck_Click" Height="27" Width="68"/>
+
+   </Grid>
+</Window>
